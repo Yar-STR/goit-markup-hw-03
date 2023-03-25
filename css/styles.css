@@ -8,7 +8,10 @@ html {
    box-sizing: inherit;
 }
 
-
+h1, h2, h3, h4, h5, h6, p, ul {
+   margin-top: 0;
+   margin-bottom: 0;
+}
 
 :root {
    --body-color: #434455;
@@ -42,9 +45,28 @@ background: var(--background-color-white);
 color: var(--body-color);
 }
 
+.container {
+   outline: 2px solid tomato;
+
+   width: 1128px;
+   padding: 0px 15px;
+   text-align: center;
+   margin: 0px auto;
+   background-color: teal;
+}
 /* Header */
-/* .header {
+.header {
    
+   background-color: #FFFFFF;
+   border-bottom: 1px solid #E7E9FC;
+   
+}
+
+/* .header-box {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    
 } */
 
 /* Logo */
@@ -115,14 +137,18 @@ color: var(--contacts-color);
 /* Site banner */
 .section-banner {
 background: var(--main-text-color);
+
 }
 .site-banner {
+width: 496px;
 font-size: 56px;
 line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--text-banner-color);
 
+padding-top: 188px;
+padding-bottom: 48px;
 }
 
 .button-style {
