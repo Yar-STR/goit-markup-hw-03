@@ -37,9 +37,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
    --team-position-color: #434455;
    }
 
-   /* section {
+   section {
       outline: 2px solid tomato;
-   } */
+   }
 
 body {
 font-family: 'Roboto', sans-serif;
@@ -49,11 +49,11 @@ color: var(--body-color);
 }
 
 .container {
-    width: 1128px;
-   padding: 0px 15px;
+   width: 1158px;
+   padding: 0px;
    text-align: center;
    margin: 0px auto;
- 
+ justify-content: space-between;
 }
 
 img {
@@ -61,16 +61,14 @@ img {
  }
 /* Header */
 .header {
-   
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
    border-bottom: 1px solid #E7E9FC;
-   
+    padding: 24px 0px;
 }
 
 .header-box {
    display: flex;
   justify-content: space-between;  
-  padding: 24px 0px;
   margin: 0 auto;
  }
 
@@ -206,6 +204,7 @@ padding: 120px 0;
    display: flex;
    gap: 24px;
    text-align: left;
+   padding: 0px;
 }
 /* .hidden-title{
 
@@ -246,7 +245,8 @@ margin-bottom: 72px;
 .list-of-doing {
 display: flex;  
 gap: 24px;
-justify-content: center;
+justify-content: space-between;
+padding: 0px;
 }
 
 /* Section team  */
@@ -269,6 +269,7 @@ margin-bottom: 72px;
 .team-list {
 display: flex;
 gap: 24px;
+padding: 0px;
 }
 
 .container-team {
@@ -314,7 +315,6 @@ padding: 100px 0px;
 
 .footer-flex {
   text-align: left;
- margin-left: 156px;
   width: 264px;
   padding: 0px;
 }
@@ -330,16 +330,37 @@ color: var(--logo-std-ft);
 }
 
 .footer-text {
-   margin-top: 16px;
+margin-top: 16px;
 font-size: 16px;
 line-height: 1.5;
    color: var(--logo-text-ft);
 }
 
-/* Portfolio page  */
+/* ---------//Portfolio page //---------------- */
 
+
+.main-saction-portfolio {
+   padding-top: 96px;
+   padding-bottom: 120px;
+}
 
 /* Section buttons  */
+
+/* .main-buttons-portfolio {
+ 
+} */
+
+.button-list-potrfolio {
+display: flex;
+text-align: center;
+margin-bottom: 72px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+justify-content: center;
+}
 .button-portf {
 
 font-family: inherit;
@@ -347,12 +368,15 @@ cursor: pointer;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-/* align-items: center;
-text-align: center; */
+align-items: center;
+text-align: center;
 letter-spacing: 0.04em;
 text-transform: capitalize;
 color: var(--button-color-blue-portf);
 background-color: var(--button-color-white-portf);
+padding: 12px 24px;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 
 }
 
@@ -366,21 +390,39 @@ background-color: var(--button-color-white-portf);
 
 
    /* Section: Project cards  */
-   /* .cards-links-img {   } */
+
+
+   .cards-links-img {  
+      padding: 0px;
+      display: flex;
+       flex-wrap: wrap;
+       gap: 48px 24px;
+       justify-content: space-between;
+    }
 
 /* .section-project-cards {
 } */
 
+.container-cards-portf {
+   padding: 32px 0px;
+   border: 1px solid #E7E9FC;
+   border-top: none;
+   text-align: left;
+
+}
 .sector-business {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--main-text-color);
+margin-bottom: 8px;
+padding-left: 16px;
 }
 
 .portfol-descrip{
    color: var(--portfolio-descrip);
    font-size: 16px;
 line-height: 1.5;
+padding-left: 16px;
 }
