@@ -273,7 +273,9 @@ padding: 0px;
 }
 
 .container-team {
-   padding: 32px 0;
+   padding: 32px 16px;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .team-name {
 font-style: normal;
@@ -404,10 +406,11 @@ border-radius: 4px;
 } */
 
 .container-cards-portf {
-   padding: 32px 0px;
+   padding: 32px 16px;
    border: 1px solid #E7E9FC;
    border-top: none;
    text-align: left;
+   
 
 }
 .sector-business {
@@ -417,12 +420,10 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--main-text-color);
 margin-bottom: 8px;
-padding-left: 16px;
 }
 
 .portfol-descrip{
    color: var(--portfolio-descrip);
    font-size: 16px;
 line-height: 1.5;
-padding-left: 16px;
 }
